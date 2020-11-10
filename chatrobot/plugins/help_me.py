@@ -61,10 +61,10 @@ async def sedlyfsir(event):
 async def help(event):
     if event.query.user_id is not Config.OWNER_ID:
         await event.edit(
-            "You Can Deploy Your Own ChatBot By Watching Video Down There. \nThank You For Contacting Me.",
+            "You Can Deploy Your Own ChatBot By asking my master \nThank You For Contacting Me.",
             buttons=[
-                [Button.url("Deploy Tutorial 📺", "t.me/Infotel14")],
-                [Button.url("Need Help ❓", "t.me/SerenaAssistantBot")],
+
+                [Button.url("Need Help ❓", "t.me/AbaddonAssistantBot")],
             ],
         )
         
