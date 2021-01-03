@@ -1,5 +1,5 @@
 
-#    Copyright (C) Midhun KM 2020
+#    Copyright (C) DevsExpo 2020-2021
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
 #    the Free Software Foundation, either version 3 of the License, or
@@ -49,11 +49,7 @@ async def sedlyfsir(event):
         elif not already_added(event.sender_id):
             add_usersid_in_db(event.sender_id)
             await chatbot.send_message(Config.DUMB_CHAT, f"NEW USER ! \nUser ID : `{event.chat_id}`")
-        await chatbot.send_file(event.chat_id, file=Config.CUSTOM_IMG, caption=text_me, buttons = [
-             [custom.Button.inline("I Want My Own Bot 🔥", data="mewant")],
-             [custom.Button.inline("Close 🔐", data="close ")],
-              ]
-             )
+        await chatbot.send_message(event.chat_id, text_me)
     
 
     

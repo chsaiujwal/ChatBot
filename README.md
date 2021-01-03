@@ -1,11 +1,11 @@
 <p align="center"><a href="https://t.me/fridayot"><img src="https://static.botsrv.com/website/img/quriobot_favicon.1727b193.png" width="2500"></a></p> 
 <h1 align="center"><b>CHAT-BOT</b></h1>
-<h4 align="center">A Simple Chatbot In Telethon</h4>
+<h4 align="center">A Simple Chatbot In Telethon With Join To Message Support !</h4>
 
 
 
 # Deploy
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/StarkGang/ChatBot/blob/main)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DevsExpo/ChatBot/blob/main)
 
 # Normal Way
 ```python3
@@ -26,3 +26,6 @@ will. Specifically you can redistribute and/or modify it under the terms of the
 [GNU General Public License](https://www.gnu.org/licenses/gpl.html) as
 published by the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version. 
+
+# Credits
+ • @Spechide For his [SQL Plugin](https://github.com/DevsExpo/ChatBot/blob/main/chatrobot/plugins/sql/users_sql.py) 

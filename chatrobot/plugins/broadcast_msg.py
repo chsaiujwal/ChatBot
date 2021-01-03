@@ -1,5 +1,5 @@
 
-#    Copyright (C) Midhun KM 2020
+#    Copyright (C) DevsExpo 2020-2021
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
 #    the Free Software Foundation, either version 3 of the License, or
@@ -23,15 +23,10 @@ async def sedlyfsir(event):
     sent_count = 0
     for starkcast in userstobc:
         try:
-            sent_count += 1
-            await chatbot.send_message(int(starkcast.chat_id), "<b>You Recived A Broadcast Message 📡</b>", parse_mode="HTML")
             await chatbot.send_message(int(starkcast.chat_id), msgtobroadcast)
-            await asyncio.sleep(0.2)
         except Exception as e:
-            try:
-                logger.info(f"Error : {error_count}\nError : {e} \nUsers : {chat_id}")
-            except:
-                pass
+            error_count += 1
+    sent_count = error_count - len(userstobc)
     await chatbot.send_message(
         event.chat_id,
         f"<b>Broadcast Done in <u>{sent_count}</u> Group/Users and I got <u>{error_count}</u> Error and Total Number Was <u>{len(userstobc)}</u></b>",

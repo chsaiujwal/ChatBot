@@ -9,9 +9,9 @@
     "telegram-chatbot",
     "productivity"
   ],
-  "repository": "https://github.com/StarkGang/ChatBot",
-  "website": "starkgang.ml",
-  "success_url": "t.me/FridayOT",
+  "repository": "https://github.com/DevsExpo/ChatBot",
+  "website": "https://github.com/DevsExpo/ChatBot",
+  "success_url": "https://github.com/DevsExpo/ChatBot",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable heroku.",

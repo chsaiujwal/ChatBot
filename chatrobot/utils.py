@@ -1,5 +1,5 @@
 
-#    Copyright (C) Midhun KM 2020
+#    Copyright (C) DevsExpo 2020-2021
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
 #    the Free Software Foundation, either version 3 of the License, or
@@ -62,7 +62,7 @@ def start_chatbot(shortname):
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         print("Starting Your Chat Bot.")
-        print("ChatBot Sucessfully imported " + shortname)
+        print("IMPORTED " + shortname)
     else:
         import importlib
         import sys
@@ -78,4 +78,4 @@ def start_chatbot(shortname):
         mod.god_only = god_only()
         spec.loader.exec_module(mod)
         sys.modules["chatrobot.plugins" + shortname] = mod
-        print("ChatBot Has imported " + shortname)
+        print("IMPORTED " + shortname)
