@@ -17,7 +17,8 @@ from chatrobot.plugins.sql.checkuser_sql import get_all_users
 @chatbot_cmd("broadcast", is_args=True)
 @god_only
 async def sedlyfsir(event):
-    msgtobroadcast = event.text
+    msgtobroadcas = event.text
+    msgtobroadcast = msgtobroadcas[9:]
     userstobc = get_all_users()
     error_count = 0
     sent_count = 0
